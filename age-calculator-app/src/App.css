@@ -1,0 +1,162 @@
+.card{
+    max-width: 38rem;
+    margin: 5rem auto;
+    padding: 5rem 3rem;
+    border-radius: 2rem;
+    border-bottom-right-radius: 10rem;
+    background-color: var(--card-bg-color);
+}
+
+@media (min-width: 768px){
+    .card{
+        min-width: 70rem;
+        padding: 5rem;
+        border-bottom-right-radius: 20rem;
+    }
+}
+
+.date__wrapper{
+    position: relative;
+    display: flex;
+    margin-bottom: 10rem;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .date__wrapper{
+        gap: 3rem;
+    }
+}
+
+.date_input{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: var(--medium-text-size);
+    color: var(--text-primary-color);
+    letter-spacing: .5rem;
+}
+
+label.error, .error_message{
+    color: var(--red-color);
+}
+
+.error_message{
+    font-style: italic;
+}
+
+input{
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 10rem;
+    padding: 1rem;
+    border: .1rem solid var(--light-grey-color);
+    border-radius: .5rem;
+    margin: .5rem 0;
+}
+
+input:hover{
+    cursor: pointer;
+    border: .1rem solid var(--purple-color);
+}
+
+@media(min-width: 768px){
+    input{
+        width: 15rem;
+    }
+}
+
+input:focus, input:focus-visible{
+    border: .1rem solid var(--purple-color);
+    border-radius: .5rem;
+}
+
+input.error{
+    border: .1rem solid var(--red-color);
+}
+
+
+.form__footer{
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    right: 0;
+}
+
+hr{
+    position: relative;
+    margin: 0;
+    border: unset;
+    height: .1rem;
+    background-color: var(--light-grey-color);
+}
+
+button{
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: unset;
+    border-radius: 50%;
+    background-color: var(--purple-color);
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: var(--text-secondary-color);
+}
+
+@media (min-width: 768px) {
+    hr{
+        max-width: 60rem;
+    }    
+
+    button{
+        width: 8rem;
+        height: 8rem;
+        left: unset;
+        right: -7%;
+    }
+}
+
+button > img{
+    height: 5rem;
+}
+
+p {
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0;
+}
+
+@media(min-width: 768px){
+    p{
+        font-size: 7rem;
+    }
+}
+
+
+
+span{
+    color: var(--purple-color);
+    margin-right: .5rem
+}
+
+
+  /* Works for Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Works for Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
